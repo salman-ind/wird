@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Tasbih</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="data:application/manifest+json,{%22name%22:%22Tasbih%22,%22short_name%22:%22Tasbih%22,%22start_url%22:%22.%22,%22display%22:%22standalone%22,%22orientation%22:%22portrait%22,%22background_color%22:%22%2309090c%22,%22theme_color%22:%22%2309090c%22,%22icons%22:[{%22src%22:%22data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3Crect%20width='512'%20height='512'%20rx='100'%20fill='%2308090c'/%3E%3Ccircle%20cx='256'%20cy='256'%20r='210'%20fill='none'%20stroke='%231c2430'%20stroke-width='2'%20stroke-dasharray='8%2014'/%3E%3Ccircle%20cx='256'%20cy='256'%20r='190'%20fill='none'%20stroke='%23161e28'%20stroke-width='22'/%3E%3Ccircle%20cx='256'%20cy='256'%20r='190'%20fill='none'%20stroke='%23c9aa52'%20stroke-width='22'%20stroke-linecap='round'%20stroke-dasharray='894.6'%20stroke-dashoffset='224'%20transform='rotate(-90%20256%20256)'/%3E%3Ctext%20x='256'%20y='286'%20text-anchor='middle'%20font-family='serif'%20font-size='130'%20fill='%23c9aa52'%3E%D8%B0%3C/text%3E%3C/svg%3E%22,%22sizes%22:%22any%22,%22type%22:%22image/svg+xml%22,%22purpose%22:%22any%20maskable%22}]}">
   <meta name="theme-color" content="#09090c" id="themeMetaColor">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Tasbih">
@@ -144,6 +144,7 @@
     <button class="icon-toggle on"  id="btnHaptic" onclick="toggleHaptic()" title="Haptics">📳</button>
     <button class="icon-toggle on"  id="btnSound"  onclick="toggleSound()"  title="Sound">🔊</button>
     <button class="icon-toggle on"  id="btnTheme"  onclick="toggleTheme()"  title="Theme">🌙</button>
+    <button class="icon-toggle off" id="btnInstall" onclick="installApp()"  title="Install app" style="display:none">⬇️</button>
   </div>
 
   <!-- ── Counter ── -->
@@ -402,10 +403,32 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
+// ── PWA Install prompt ────────────────────────────────────────────
+let deferredInstallPrompt = null;
+const btnInstall = document.getElementById('btnInstall');
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  btnInstall.style.display = 'flex';
+});
+
+window.addEventListener('appinstalled', () => {
+  btnInstall.style.display = 'none';
+  deferredInstallPrompt = null;
+});
+
+async function installApp() {
+  if (!deferredInstallPrompt) return;
+  deferredInstallPrompt.prompt();
+  const { outcome } = await deferredInstallPrompt.userChoice;
+  if (outcome === 'accepted') btnInstall.style.display = 'none';
+  deferredInstallPrompt = null;
+}
+
 // ── Init ──────────────────────────────────────────────────────────
 draw();
 acquireWakeLock();
-if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
 </body>
 </html>
