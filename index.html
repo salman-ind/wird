@@ -19,10 +19,10 @@
 
     :root,[data-theme="dark"]{
       --bg:#09090c; --surface:#0f1115; --surface2:#161b22;
-      --border:#1e222c;
+      --border:#252b38; --border2:#2e3648;
       --gold:#c9aa52; --gold-soft:#dfc070; --gold-dim:#7a6430; --gold-glow:rgba(201,170,82,0.22);
       --green:#2d6a4f; --green-bright:#52b788;
-      --text:#dfd8c8; --text-sub:#998d7c; --text-muted:#4e4840;
+      --text:#dfd8c8; --text-sub:#c2b09e; --text-muted:#8a7d72;
       --track:#13171f; --hdr-bg:#0b0c10;
       --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
     }
@@ -516,10 +516,14 @@
           <button class="duas-chip" onclick="chipSearch('anxiety')">anxiety</button>
           <button class="duas-chip" onclick="chipSearch('illness')">illness</button>
           <button class="duas-chip" onclick="chipSearch('guidance')">guidance</button>
-          <button class="duas-chip" onclick="chipSearch('parents')">parents</button>
+          <button class="duas-chip" onclick="chipSearch('grateful')">grateful</button>
+          <button class="duas-chip" onclick="chipSearch('happy')">happy</button>
+          <button class="duas-chip" onclick="chipSearch('struggle')">struggle</button>
+          <button class="duas-chip" onclick="chipSearch('barakah')">barakah</button>
+          <button class="duas-chip" onclick="chipSearch('jannah')">jannah</button>
+          <button class="duas-chip" onclick="chipSearch('health')">health</button>
           <button class="duas-chip" onclick="chipSearch('debt')">debt</button>
-          <button class="duas-chip" onclick="chipSearch('knowledge')">knowledge</button>
-          <button class="duas-chip" onclick="chipSearch('patience')">patience</button>
+          <button class="duas-chip" onclick="chipSearch('parents')">parents</button>
           <button class="duas-chip" onclick="chipSearch('children')">children</button>
         </div>
       </div>
@@ -1249,6 +1253,114 @@ const DUAS = [
     source: "Bukhārī 1377 · Muslim 588",
     type: "hadith",
     tags: ["trials","fitna","dajjal","false messiah","end times","grave","death","life","protection","last days","fear of death","dying","afterlife","punishment of grave","azab al-qabr","major signs","trial","test","hardship","world fitna","social fitna","loss of faith","protection"]
+  },
+
+  // ── FEELING HAPPY & BLESSED ─────────────────────────────────────
+  {
+    title: "Du'ā of Praise When Blessed — Alḥamdulillāh",
+    arabic: "اَلْحَمْدُ لِلّٰهِ الَّذِيْ بِنِعْمَتِهٖ تَتِمُّ الصَّالِحَاتُ",
+    translation: "Praise be to Allah by Whose grace all good things are completed.",
+    source: "Ibn Mājah 3803 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["happy","happiness","blessed","good news","joy","elated","grateful","grace","ni'mah","good things","completed","success","achievement","something went well","celebration","relief","good outcome","alhamdulillah","when things go right","excited","pleased","gift","favour","moment of joy","thankful"]
+  },
+  {
+    title: "Du'ā When Receiving a Blessing",
+    arabic: "اَللّٰهُمَّ لَكَ الْحَمْدُ وَإِلَيْكَ الْمُشْتَكٰى وَأَنْتَ الْمُسْتَعَانُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ",
+    translation: "O Allah, all praise is for You; to You is my complaint, and You are the One from Whom help is sought. There is no power and no strength except through Allah.",
+    source: "Tirmidhī 3551 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["happy","happiness","blessed","praise","hamd","complaint","help","tawakkul","la hawla","no power but allah","in all states","whether good or bad","believer's affair","grateful","dependent on allah","joy","relief","cheerful","fortunate","things going well","optimistic","content","satisfied","praising allah"]
+  },
+
+  // ── GRATITUDE ───────────────────────────────────────────────────
+  {
+    title: "Du'ā for Help in Gratitude & Worship",
+    arabic: "اَللّٰهُمَّ أَعِنِّيْ عَلٰى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+    translation: "O Allah, help me to remember You, to be grateful to You, and to worship You in the best manner.",
+    source: "Abū Dāwūd 1522 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["gratitude","shukr","dhikr","remembrance","worship","ibadah","help","grateful","thankful","remembering allah","consistent","better worship","improve","increase gratitude","short","daily","after salah","beautiful","powerful","thankfulness","wanting to be more grateful","lacking gratitude","wanting closeness to allah"]
+  },
+  {
+    title: "Du'ā of Sulaymān — Gratitude for Favour",
+    arabic: "رَبِّ أَوْزِعْنِيْ أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِيْ أَنْعَمْتَ عَلَيَّ وَعَلٰى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضٰهُ وَأَدْخِلْنِيْ بِرَحْمَتِكَ فِيْ عِبَادِكَ الصَّالِحِيْنَ",
+    translation: "My Lord, enable me to be grateful for Your favour which You have bestowed upon me and upon my parents, and to do righteousness that pleases You, and admit me by Your mercy among Your righteous servants.",
+    source: "Qur'ān 27:19",
+    type: "quran",
+    tags: ["gratitude","shukr","sulayman","solomon","parents","blessings","thankful","righteous deeds","mercy","righteous servants","admission to jannah","favour","ni'mah","acknowledging blessings","wanting to be righteous","join righteous","grateful for life","parents","good deeds","acceptance","grateful"]
+  },
+
+  // ── GOING THROUGH STRUGGLES ─────────────────────────────────────
+  {
+    title: "Du'ā for Ease in Difficulty",
+    arabic: "اَللّٰهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهٗ سَهْلًا وَأَنْتَ تَجْعَلُ الْحَزَنَ إِذَا شِئْتَ سَهْلًا",
+    translation: "O Allah, there is no ease except in what You make easy, and You make grief easy if You so will.",
+    source: "Ibn Ḥibbān 974 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["ease","difficulty","struggle","hard","tough","difficult situation","hardship","Allah can make easy","nothing easy without Allah","grief","sad","feeling stuck","overwhelming","impossible","help","crisis","anxiety","stress","prayer for ease","difficult path","tawakkul","trust","short","powerful","when life is hard"]
+  },
+  {
+    title: "Du'ā — No Power Except Through Allāh",
+    arabic: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ",
+    translation: "There is no power and no strength except through Allah.",
+    source: "Bukhārī 6384 · Muslim 2704",
+    type: "hadith",
+    tags: ["struggle","difficulty","powerless","helpless","weak","overwhelmed","no strength","hardship","la hawla","tawakkul","reliance","patience","short","powerful","concise","treasure of paradise","kanz","exhausted","depleted","can't carry on","keep going","strength from allah","trial","tests","crisis","one of the treasures of jannah"]
+  },
+
+  // ── GOOD HEALTH ─────────────────────────────────────────────────
+  {
+    title: "Du'ā for Health in Body, Hearing & Sight",
+    arabic: "اَللّٰهُمَّ عَافِنِيْ فِيْ بَدَنِيْ ۔ اَللّٰهُمَّ عَافِنِيْ فِيْ سَمْعِيْ ۔ اَللّٰهُمَّ عَافِنِيْ فِيْ بَصَرِيْ ۔ لَآ إِلٰهَ إِلَّآ أَنْتَ",
+    translation: "O Allah, grant me health in my body. O Allah, grant me health in my hearing. O Allah, grant me health in my sight. There is no deity except You.",
+    source: "Abū Dāwūd 5090 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["health","body","hearing","sight","eyes","ears","aafiyah","well-being","sound body","physical health","morning","evening","daily","protect senses","blindness","deafness","disability","chronic illness","protection","good health","staying healthy","sound","fit","wellness","grateful for senses","health dua","short","repeated three times"]
+  },
+  {
+    title: "Du'ā for Beneficial Knowledge, Pure Provision & Accepted Deeds",
+    arabic: "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ عِلْمًا نَّافِعًا وَّرِزْقًا طَيِّبًا وَّعَمَلًا مُّتَقَبَّلًا",
+    translation: "O Allah, I ask You for knowledge that is beneficial, provision that is pure and good, and deeds that are accepted.",
+    source: "Ibn Mājah 925 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["health","wholesome","pure","tayyib","good provision","accepted deeds","amal","knowledge","ilm","work","livelihood","halal","beneficial","sound","overall wellbeing","spiritual and physical","after fajr","morning","short","powerful","three things","complete dua","daily","balanced life","holistic","wellbeing"]
+  },
+
+  // ── BARAKAH ─────────────────────────────────────────────────────
+  {
+    title: "Du'ā for Barakah in Provision & Home",
+    arabic: "اَللّٰهُمَّ اغْفِرْ لِيْ ذَنْبِيْ وَوَسِّعْ لِيْ فِيْ دَارِيْ وَبَارِكْ لِيْ فِيْ رِزْقِيْ",
+    translation: "O Allah, forgive me my sins, make my home spacious for me, and bless the provision You have granted me.",
+    source: "al-Nasā'ī · al-Ṣaḥīḥah 1/72 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["barakah","blessing","provision","rizq","home","house","forgiveness","sins","spacious","increase","abundant","food","money","family","dwelling","new home","blessed home","expand rizq","blessed provision","financial","contentment","three things","comprehensive","the prophet's own supplication","abundance","mehr","increase in good"]
+  },
+  {
+    title: "Du'ā for Barakah in Time, Wealth & Deeds",
+    arabic: "اَللّٰهُمَّ بَارِكْ لَنَا فِيْ أَيَّامِنَا وَلَيَالِيْنَا وَسَاعَاتِنَا وَأَعْمَارِنَا",
+    translation: "O Allah, bless us in our days, our nights, our hours, and our lifespans.",
+    source: "al-Ṭabarānī · authenticated by al-Albānī in al-Ṣaḥīḥah 1217",
+    type: "hadith",
+    tags: ["barakah","blessing","time","days","nights","hours","lifespan","age","umr","productive","blessed time","make the most","time management","wasted time","not enough hours","life too short","blessings in time","daily","consistent","beautiful","morning","evening","blessed life","barakat in everything","overall blessing"]
+  },
+
+  // ── JANNAH ──────────────────────────────────────────────────────
+  {
+    title: "Du'ā for Jannah & Protection from the Fire",
+    arabic: "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْجَنَّةَ وَأَعُوْذُ بِكَ مِنَ النَّارِ",
+    translation: "O Allah, I ask You for Paradise and I seek refuge in You from the Fire.",
+    source: "Abū Dāwūd 792 · authenticated by al-Albānī",
+    type: "hadith",
+    tags: ["jannah","paradise","hellfire","naar","fire","protection","short","simple","powerful","asking for paradise","fear of hellfire","hereafter","akhira","afterlife","eternal","daily","concise","the prophet said whoever asks for jannah three times","firdaws","reward","motivation","goal","destination","ultimate","every muslim's desire"]
+  },
+  {
+    title: "Du'ā of Ibrāhīm — For Wisdom, Righteousness & Jannah",
+    arabic: "رَبِّ هَبْ لِيْ حُكْمًا وَّأَلْحِقْنِيْ بِالصَّالِحِيْنَ ۝ وَاجْعَلْ لِّيْ لِسَانَ صِدْقٍ فِي الْاٰخِرِيْنَ ۝ وَاجْعَلْنِيْ مِنْ وَّرَثَةِ جَنَّةِ النَّعِيْمِ",
+    translation: "My Lord, grant me wisdom and join me with the righteous. And grant me an honourable mention among later generations. And make me one of the inheritors of the Garden of Bliss.",
+    source: "Qur'ān 26:83–85",
+    type: "quran",
+    tags: ["jannah","paradise","ibrahim","abraham","wisdom","righteous","join righteous","good legacy","remembered well","garden of bliss","na'im","hereafter","inheritors of paradise","good name","legacy after death","truthful tongue","honest speech","join prophets","companions of jannah","eternal home","beautiful dua","comprehensive","inheritance of paradise"]
   }
 ];
 
@@ -1307,10 +1419,14 @@ function showDuasLanding() {
         <button class="duas-chip" onclick="chipSearch('anxiety')">anxiety</button>
         <button class="duas-chip" onclick="chipSearch('illness')">illness</button>
         <button class="duas-chip" onclick="chipSearch('guidance')">guidance</button>
-        <button class="duas-chip" onclick="chipSearch('parents')">parents</button>
+        <button class="duas-chip" onclick="chipSearch('grateful')">grateful</button>
+        <button class="duas-chip" onclick="chipSearch('happy')">happy</button>
+        <button class="duas-chip" onclick="chipSearch('struggle')">struggle</button>
+        <button class="duas-chip" onclick="chipSearch('barakah')">barakah</button>
+        <button class="duas-chip" onclick="chipSearch('jannah')">jannah</button>
+        <button class="duas-chip" onclick="chipSearch('health')">health</button>
         <button class="duas-chip" onclick="chipSearch('debt')">debt</button>
-        <button class="duas-chip" onclick="chipSearch('knowledge')">knowledge</button>
-        <button class="duas-chip" onclick="chipSearch('patience')">patience</button>
+        <button class="duas-chip" onclick="chipSearch('parents')">parents</button>
         <button class="duas-chip" onclick="chipSearch('children')">children</button>
       </div>
     </div>`;
