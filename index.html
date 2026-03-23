@@ -429,7 +429,7 @@
         </svg>
         <div class="ring-center">
           <div class="count-num" id="countNum">0</div>
-          <div class="count-of"  id="countOf">of 33</div>
+          <div class="count-of"  id="countOf">of 3</div>
         </div>
       </div>
     </div>
@@ -439,8 +439,9 @@
       <div class="goal-wrap">
         <span class="goal-label">Goal</span>
         <div class="goal-pills">
-          <button class="pill active" onclick="setGoal(33,this)">33</button>
-          <button class="pill"        onclick="setGoal(99,this)">99</button>
+          <button class="pill active"        onclick="setGoal(3,this)">3</button>
+          <button class="pill"        onclick="setGoal(10,this)">10</button>
+          <button class="pill"              onclick="setGoal(33,this)">33</button>
           <button class="pill"        onclick="setGoal(100,this)">100</button>
         </div>
       </div>
@@ -705,7 +706,7 @@ const ADHKAR = {
 //  STATE
 // ═══════════════════════════════════════════════════
 const CIRC = 2 * Math.PI * 128; // 804.25
-let count = 0, goal = 33;
+let count = 0, goal = 3;
 let soundOn = true, hapticOn = true, isDark = true;
 
 const sess = { active: false, type: null, step: 0 };
@@ -911,7 +912,7 @@ function endSession() {
   freeCtrl.classList.remove('hidden');
   sessCtrl.classList.remove('visible');
   updateCentering();
-  goal = 33;
+  goal = 3;
   count = 0;
   ringFill.classList.remove('done');
   draw();
