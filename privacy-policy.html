@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Wird</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #09090c;
+      --surface: #0f1115;
+      --border: #252b38;
+      --gold: #c9aa52;
+      --gold-dim: #7a6430;
+      --text: #dfd8c8;
+      --text-sub: #c2b09e;
+      --text-muted: #8a7d72;
+    }
+
+    html, body {
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(201,170,82,.06) 0%, transparent 65%);
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 72px 32px 96px;
+    }
+
+    /* Header */
+    .site-header {
+      margin-bottom: 64px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .app-name {
+      font-family: 'Cinzel', serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: .1em;
+      margin-bottom: 6px;
+    }
+
+    .app-tagline {
+      font-size: 14px;
+      color: var(--text-muted);
+      letter-spacing: .04em;
+    }
+
+    /* Page title */
+    .page-title {
+      font-family: 'Cinzel', serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: .06em;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      letter-spacing: .03em;
+    }
+
+    /* Summary banner */
+    .summary {
+      background: rgba(201,170,82,.06);
+      border: 1px solid var(--gold-dim);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .summary-title {
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+
+    .summary-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-sub);
+    }
+
+    .summary-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 7px;
+      opacity: .7;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-sub);
+      line-height: 1.85;
+    }
+
+    .section p + p {
+      margin-top: 12px;
+    }
+
+    /* Contact */
+    .contact-link {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-dim);
+      transition: border-color .2s;
+    }
+
+    .contact-link:hover {
+      border-color: var(--gold);
+    }
+
+    /* Footer */
+    .site-footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: .04em;
+    }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 48px 20px 72px; }
+      .app-name { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+      <div class="app-name">Wird</div>
+      <div class="app-tagline">Your daily remembrance</div>
+    </header>
+
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="effective-date">Effective date: 26 March 2026</p>
+
+    <div class="summary">
+      <div class="summary-title">The short version</div>
+      <div class="summary-items">
+        <div class="summary-item"><div class="summary-dot"></div><span>Wird does not collect any personal data.</span></div>
+        <div class="summary-item"><div class="summary-dot"></div><span>Wird does not use the internet or connect to any server.</span></div>
+        <div class="summary-item"><div class="summary-dot"></div><span>Wird does not use analytics, tracking, or advertising.</span></div>
+        <div class="summary-item"><div class="summary-dot"></div><span>Everything you do in the app stays on your device.</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Overview</div>
+      <p>Wird is a simple Islamic companion app for dhikr counting, morning and evening adhkar, du'ā reference, and the Asmā' al-Ḥusnā. It is designed to work entirely offline and requires no account, login, or personal information of any kind.</p>
+      <p>This privacy policy explains what data Wird does and does not handle.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Data collection</div>
+      <p>Wird collects no data. The app does not ask for your name, email address, phone number, location, or any other personal information.</p>
+      <p>No usage data, analytics, crash reports, or telemetry are collected or transmitted. Your interactions with the app — including your dhikr counts, preferences, and settings — are stored only in your device's local storage and never leave your device.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Internet access</div>
+      <p>Wird does not connect to the internet during normal use. The app is fully self-contained and functions entirely offline. No data is sent to or received from any external server.</p>
+      <p>The only exception is the initial download of web fonts (Cinzel and Scheherazade New from Google Fonts) when the app is first opened on a device with internet access. This is a standard browser behaviour. If you are offline, the app falls back to system fonts.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Third-party services</div>
+      <p>Wird does not integrate any third-party analytics tools, advertising networks, crash reporting services, or social media SDKs. No third party receives any data as a result of your use of this app.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Children's privacy</div>
+      <p>Wird does not collect personal information from anyone, including children under the age of 13. There is no mechanism in the app to do so.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Changes to this policy</div>
+      <p>If this privacy policy changes in the future, the updated version will be published at this URL with a revised effective date. Given that Wird collects no data, substantive changes to this policy are unlikely.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <p>If you have any questions about this privacy policy, you are welcome to reach out at <a class="contact-link" href="mailto:salman97@gmail.com">salman97@gmail.com</a>.</p>
+    </div>
+
+    <footer class="site-footer">
+      &copy; 2026 Wird &nbsp;·&nbsp; All rights reserved
+    </footer>
+
+  </div>
+</body>
+</html>
